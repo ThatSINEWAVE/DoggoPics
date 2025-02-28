@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoggoPics</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>DoggoPics</h1>
+      <p class="subtitle">Your daily dose of cute doggos</p>
+      <div class="buttons">
+        <button onclick="getRandomDog()">Show me a random dog</button>
+        <br>
+        <select id="breedSelect" onchange="getDogByBreed()">
+          <option value="">Show me a dog of the breed...</option>
+        </select>
+        <button onclick="getDogByBreed()">Show me a dog of the breed</button>
+      </div>
+      <br>
+      <img id="dogImage" src="" alt="Dog Image will appear here">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
